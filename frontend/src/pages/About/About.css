@@ -1,0 +1,110 @@
+.about-page__hero {
+  padding: calc(var(--navbar-height) + var(--space-16)) 0 var(--space-12);
+}
+
+.about-page__eyebrow {
+  display: inline-block;
+  font-size: var(--font-size-sm);
+  font-weight: 700;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  color: var(--color-primary);
+  background-color: rgba(139, 94, 42, 0.1);
+  padding: var(--space-1) var(--space-4);
+  border-radius: var(--radius-full);
+  margin-bottom: var(--space-4);
+}
+
+/* Story */
+.about-page__story,
+.about-page__mission {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: var(--space-16);
+  align-items: center;
+}
+
+.about-page__story-content h2,
+.about-page__mission-content h2 {
+  font-size: var(--font-size-3xl);
+  margin: var(--space-3) 0 var(--space-5);
+}
+
+.about-page__story-content p,
+.about-page__mission-content p {
+  font-size: var(--font-size-base);
+  color: var(--color-text-medium);
+  line-height: 1.8;
+  margin-bottom: var(--space-5);
+}
+
+.about-page__story-image img,
+.about-page__mission-image img {
+  width: 100%;
+  border-radius: var(--radius-xl);
+  box-shadow: var(--shadow-xl);
+}
+
+/* Mission List */
+.about-page__mission-list {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-3);
+  margin-bottom: var(--space-6);
+}
+
+.about-page__mission-list li {
+  font-size: var(--font-size-base);
+  color: var(--color-text-medium);
+}
+
+/* Values */
+.about-page__values {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: var(--space-6);
+}
+
+.about-page__value-card {
+  background-color: var(--color-bg-card);
+  border: 1px solid var(--color-border-light);
+  border-radius: var(--radius-xl);
+  padding: var(--space-8);
+  text-align: center;
+  transition: all var(--transition-base);
+}
+
+.about-page__value-card:hover {
+  transform: translateY(-4px);
+  box-shadow: var(--shadow-lg);
+  border-color: var(--color-accent);
+}
+
+.about-page__value-icon {
+  font-size: 2.5rem;
+  display: block;
+  margin-bottom: var(--space-4);
+}
+
+.about-page__value-card h3 {
+  font-size: var(--font-size-lg);
+  margin-bottom: var(--space-3);
+}
+
+.about-page__value-card p {
+  font-size: var(--font-size-sm);
+  color: var(--color-text-medium);
+  line-height: 1.6;
+}
+
+@media (max-width: 1024px) {
+  .about-page__values { grid-template-columns: repeat(2, 1fr); }
+}
+
+@media (max-width: 768px) {
+  .about-page__story,
+  .about-page__mission { grid-template-columns: 1fr; }
+  .about-page__story-content h2,
+  .about-page__mission-content h2 { font-size: var(--font-size-2xl); }
+  .about-page__values { grid-template-columns: 1fr 1fr; }
+}
