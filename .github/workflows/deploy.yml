@@ -23,11 +23,8 @@ jobs:
 
       - name: Install dependencies
         run: |
-          rm -f ~/.npmrc
-          rm -f .npmrc
-          npm config delete registry
-          npm config set registry https://registry.npmjs.org/
-          npm install --prefer-online
+          echo "registry=https://registry.npmjs.org/" > .npmrc
+          npm install --registry https://registry.npmjs.org/ --legacy-peer-deps
         working-directory: frontend
 
       - name: Build React app
