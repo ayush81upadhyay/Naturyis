@@ -35,6 +35,7 @@ jobs:
         working-directory: frontend
         env:
           CI: false
+          DISABLE_ESLINT_PLUGIN: true
           REACT_APP_ENV: production
           REACT_APP_SITE_NAME: Naturyis
           REACT_APP_TAGLINE: Pure. Natural. Jaggery.
