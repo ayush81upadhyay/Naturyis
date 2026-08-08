@@ -23,9 +23,12 @@ jobs:
 
       - name: Install dependencies
         run: |
-          echo "registry=https://registry.npmjs.org/" > .npmrc
-          npm install --registry https://registry.npmjs.org/ --legacy-peer-deps
+          rm -f package-lock.json
+          rm -f .npmrc
+          npm install --registry https://registry.npmjs.org/ --no-fund --no-audit
         working-directory: frontend
+        env:
+          NPM_CONFIG_REGISTRY: https://registry.npmjs.org/
 
       - name: Build React app
         run: npm run build
