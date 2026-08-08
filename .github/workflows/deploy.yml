@@ -1,0 +1,53 @@
+name: Deploy Naturyis to GitHub Pages
+
+on:
+  push:
+    branches:
+      - master
+
+permissions:
+  contents: write
+
+jobs:
+  build-and-deploy:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v3
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v3
+        with:
+          node-version: '18'
+          cache: 'npm'
+          cache-dependency-path: frontend/package-lock.json
+
+      - name: Install dependencies
+        run: npm install
+        working-directory: frontend
+
+      - name: Build React app
+        run: npm run build
+        working-directory: frontend
+        env:
+          CI: false
+          REACT_APP_ENV: production
+          REACT_APP_SITE_NAME: Naturyis
+          REACT_APP_TAGLINE: Pure. Natural. Jaggery.
+          REACT_APP_API_BASE_URL: https://api.naturyis.com/api
+          REACT_APP_CONTACT_EMAIL: naturyis@gmail.com
+          REACT_APP_CONTACT_PHONE: "+91 7875112551"
+          REACT_APP_CONTACT_PHONE_2: "+91 9359635951"
+          REACT_APP_WHATSAPP_NUMBER: "917875112551"
+          REACT_APP_INSTAGRAM_URL: https://www.instagram.com/naturyis
+          REACT_APP_FACEBOOK_URL: https://www.facebook.com/profile.php?id=61589624755036
+          REACT_APP_FREE_DELIVERY_THRESHOLD: "500"
+          REACT_APP_CURRENCY: INR
+
+      - name: Deploy to GitHub Pages
+        uses: peaceiris/actions-gh-pages@v3
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          publish_dir: frontend/build
+          cname: naturyis.com
