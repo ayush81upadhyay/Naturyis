@@ -154,9 +154,15 @@
 }
 
 .footer__copyright,
-.footer__made {
+.footer__made,
+.footer__developer {
   font-size: var(--font-size-sm);
   color: rgba(250, 247, 242, 0.5);
+}
+
+.footer__developer {
+  color: rgba(250, 247, 242, 0.4);
+  font-style: italic;
 }
 
 @media (max-width: 1024px) {
