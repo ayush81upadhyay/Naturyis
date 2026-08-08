@@ -1,6 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import { NAV_LINKS, CONTACT_EMAIL, CONTACT_PHONE, INSTAGRAM_URL, FACEBOOK_URL, SITE_NAME } from '../../constants';
+import { NAV_LINKS, CONTACT_EMAIL, CONTACT_PHONE, CONTACT_PHONE_2, INSTAGRAM_URL, FACEBOOK_URL, SITE_NAME, ADDRESS, DEVELOPER } from '../../constants';
 import logo from '../../assets/images/logoCircle.png';
 import './Footer.css';
 
@@ -65,11 +65,15 @@ const Footer = () => {
               </li>
               <li className="footer__contact-item">
                 <span>📞</span>
-                <a href={`tel:${CONTACT_PHONE}`} className="footer__link">{CONTACT_PHONE}</a>
+                <a href={`tel:${CONTACT_PHONE.replace(/\s/g, '')}`} className="footer__link">{CONTACT_PHONE}</a>
+              </li>
+              <li className="footer__contact-item">
+                <span>📞</span>
+                <a href={`tel:${CONTACT_PHONE_2.replace(/\s/g, '')}`} className="footer__link">{CONTACT_PHONE_2}</a>
               </li>
               <li className="footer__contact-item">
                 <span>📍</span>
-                <span className="footer__address">Pune, Maharashtra, India</span>
+                <span className="footer__address">{ADDRESS}</span>
               </li>
             </ul>
             <div className="footer__badges">
@@ -87,6 +91,9 @@ const Footer = () => {
           </p>
           <p className="footer__made">
             Made with 💛 in India
+          </p>
+          <p className="footer__developer">
+            Developed by {DEVELOPER}
           </p>
         </div>
       </div>

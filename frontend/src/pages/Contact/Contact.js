@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import SectionHeader from '../../components/SectionHeader';
 import Button from '../../components/Button';
-import { CONTACT_EMAIL, CONTACT_PHONE, WHATSAPP_NUMBER } from '../../constants';
+import { CONTACT_EMAIL, CONTACT_PHONE, CONTACT_PHONE_2, WHATSAPP_NUMBER, ADDRESS } from '../../constants';
 import './Contact.css';
 
 const INITIAL_FORM = { name: '', email: '', phone: '', subject: '', message: '' };
@@ -65,11 +65,12 @@ const Contact = () => {
                   <p>{CONTACT_EMAIL}</p>
                 </div>
               </a>
-              <a href={`tel:${CONTACT_PHONE}`} className="contact-page__info-card">
+              <a href={`tel:${CONTACT_PHONE.replace(/\s/g, '')}`} className="contact-page__info-card">
                 <span className="contact-page__info-icon">📞</span>
                 <div>
                   <strong>Call Us</strong>
                   <p>{CONTACT_PHONE}</p>
+                  <p>{CONTACT_PHONE_2}</p>
                 </div>
               </a>
               <a href={whatsappUrl} target="_blank" rel="noopener noreferrer" className="contact-page__info-card">
@@ -83,7 +84,7 @@ const Contact = () => {
                 <span className="contact-page__info-icon">📍</span>
                 <div>
                   <strong>Our Address</strong>
-                  <p>Pune, Maharashtra, India</p>
+                  <p>{ADDRESS}</p>
                 </div>
               </div>
             </div>

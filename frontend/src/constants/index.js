@@ -1,11 +1,14 @@
 export const SITE_NAME = process.env.REACT_APP_SITE_NAME || 'Naturyis';
 export const TAGLINE = process.env.REACT_APP_TAGLINE || 'Pure. Natural. Jaggery.';
 export const API_BASE_URL = process.env.REACT_APP_API_BASE_URL || 'http://localhost:5000/api';
-export const CONTACT_EMAIL = process.env.REACT_APP_CONTACT_EMAIL || 'hello@naturyis.com';
-export const CONTACT_PHONE = process.env.REACT_APP_CONTACT_PHONE || '+91-XXXXXXXXXX';
-export const WHATSAPP_NUMBER = process.env.REACT_APP_WHATSAPP_NUMBER || '91XXXXXXXXXX';
+export const CONTACT_EMAIL = process.env.REACT_APP_CONTACT_EMAIL || 'naturyis@gmail.com';
+export const CONTACT_PHONE = process.env.REACT_APP_CONTACT_PHONE || '+91 7875112551';
+export const CONTACT_PHONE_2 = process.env.REACT_APP_CONTACT_PHONE_2 || '+91 9359635951';
+export const WHATSAPP_NUMBER = process.env.REACT_APP_WHATSAPP_NUMBER || '917875112551';
 export const INSTAGRAM_URL = process.env.REACT_APP_INSTAGRAM_URL || 'https://www.instagram.com/naturyis';
-export const FACEBOOK_URL = process.env.REACT_APP_FACEBOOK_URL || 'https://www.facebook.com/naturyis';
+export const FACEBOOK_URL = process.env.REACT_APP_FACEBOOK_URL || 'https://www.facebook.com/profile.php?id=61589624755036';
+export const ADDRESS = 'Nigave Dumala, Taluka Karveer, District Kolhapur, Maharashtra - 416229, India';
+export const DEVELOPER = 'Ayush Upadhyay';
 export const FREE_DELIVERY_THRESHOLD = Number(process.env.REACT_APP_FREE_DELIVERY_THRESHOLD) || 500;
 
 export const NAV_LINKS = [
