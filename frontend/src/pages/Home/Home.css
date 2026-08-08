@@ -1,0 +1,97 @@
+.home__products-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: var(--space-8);
+  margin-bottom: var(--space-10);
+}
+
+.home__products-cta {
+  text-align: center;
+}
+
+.home__testimonials-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: var(--space-6);
+}
+
+/* Stats Banner */
+.home__stats-banner {
+  padding: var(--space-12) 0;
+}
+
+.home__stats-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: var(--space-6);
+  text-align: center;
+}
+
+.home__stat strong {
+  display: block;
+  font-family: var(--font-heading);
+  font-size: var(--font-size-3xl);
+  color: var(--color-primary);
+  margin-bottom: var(--space-2);
+}
+
+.home__stat p {
+  font-size: var(--font-size-base);
+  color: var(--color-text-medium);
+  font-weight: 600;
+}
+
+/* CTA Banner */
+.home__cta-banner {
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  position: relative;
+}
+
+.home__cta-overlay {
+  background: linear-gradient(135deg, rgba(44, 36, 24, 0.88) 0%, rgba(139, 94, 42, 0.75) 100%);
+  padding: var(--space-24) 0;
+}
+
+.home__cta-content {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: var(--space-5);
+}
+
+.home__cta-eyebrow {
+  font-size: var(--font-size-sm);
+  font-weight: 700;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  color: var(--color-accent-light);
+  background-color: rgba(223, 201, 154, 0.15);
+  padding: var(--space-2) var(--space-5);
+  border-radius: var(--radius-full);
+}
+
+.home__cta-title {
+  font-size: var(--font-size-4xl);
+  color: var(--color-text-white);
+  max-width: 600px;
+}
+
+.home__cta-subtitle {
+  font-size: var(--font-size-md);
+  color: rgba(250, 247, 242, 0.8);
+}
+
+@media (max-width: 1024px) {
+  .home__products-grid { grid-template-columns: repeat(2, 1fr); }
+  .home__stats-grid { grid-template-columns: repeat(2, 1fr); }
+}
+
+@media (max-width: 768px) {
+  .home__products-grid { grid-template-columns: 1fr; }
+  .home__testimonials-grid { grid-template-columns: 1fr; }
+  .home__stats-grid { grid-template-columns: repeat(2, 1fr); }
+  .home__cta-title { font-size: var(--font-size-2xl); }
+}
