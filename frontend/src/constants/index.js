@@ -1,3 +1,7 @@
+import JaggeryPouch from '../assets/images/JaggeryPouch.png';
+import JGPouch from '../assets/images/JGPouch.png';
+import SugBag from '../assets/images/SugBag.png';
+
 export const SITE_NAME = process.env.REACT_APP_SITE_NAME || 'Naturyis';
 export const TAGLINE = process.env.REACT_APP_TAGLINE || 'Pure. Natural. Jaggery.';
 export const API_BASE_URL = process.env.REACT_APP_API_BASE_URL || 'http://localhost:5000/api';
@@ -28,7 +32,7 @@ export const PRODUCTS = [
     weight: '500g',
     price: 199,
     originalPrice: 249,
-    image: '/assets/images/JaggeryPouch.png',
+    image: JaggeryPouch,
     badge: 'Bestseller',
     tags: ['Chemical-Free', 'Fasting Safe', 'No Preservatives'],
   },
@@ -40,7 +44,7 @@ export const PRODUCTS = [
     weight: '1kg',
     price: 349,
     originalPrice: 420,
-    image: '/assets/images/JGPouch.png',
+    image: JGPouch,
     badge: 'Value Pack',
     tags: ['Chemical-Free', 'Daily Use', 'No Preservatives'],
   },
@@ -52,7 +56,7 @@ export const PRODUCTS = [
     weight: '500g',
     price: 179,
     originalPrice: 220,
-    image: '/assets/images/SugBag.png',
+    image: SugBag,
     badge: 'Traditional',
     tags: ['Iron-Rich', 'Traditional Recipe', 'No Chemicals'],
   },
