@@ -2,6 +2,10 @@
   padding: calc(var(--navbar-height) + var(--space-16)) 0 var(--space-12);
 }
 
+.about-page {
+  overflow-x: hidden;
+}
+
 .about-page__eyebrow {
   display: inline-block;
   font-size: var(--font-size-sm);
@@ -103,8 +107,10 @@
 
 @media (max-width: 768px) {
   .about-page__story,
-  .about-page__mission { grid-template-columns: 1fr; }
+  .about-page__mission { grid-template-columns: 1fr; gap: var(--space-8); }
   .about-page__story-content h2,
   .about-page__mission-content h2 { font-size: var(--font-size-2xl); }
-  .about-page__values { grid-template-columns: 1fr 1fr; }
+  .about-page__values { grid-template-columns: 1fr; }
+  .about-page__story-image img,
+  .about-page__mission-image img { max-width: 100%; }
 }

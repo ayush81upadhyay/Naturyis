@@ -75,7 +75,7 @@ const Shipping = () => {
 
           <div className="policy-card policy-card--cta">
             <h3>Have a shipping query?</h3>
-            <p>Reach us at <a href="mailto:naturyis@gmail.com">naturyis@gmail.com</a> or WhatsApp us at +91 7875112551</p>
+            <p>Reach us at <a href="mailto:naturyis@gmail.com">naturyis@gmail.com</a> or WhatsApp us at +91 9359635951</p>
           </div>
 
         </div>

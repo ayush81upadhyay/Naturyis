@@ -10,6 +10,7 @@ const Hero = () => {
         {/* Left Content */}
         <div className="hero__content">
           <span className="hero__eyebrow">✦ Chemical-Free · FSSAI Licensed · Ships Across India</span>
+          <p className="hero__tagline">Sweet. Clean. Real.</p>
           <h1 className="hero__title">
             Pure Jaggery,<br />
             <span className="hero__title-accent">The Way Nature</span><br />
@@ -38,6 +39,7 @@ const Hero = () => {
           <div className="hero__delivery">
             <span>🚚</span>
             <span>Free delivery on orders above ₹500 · Pan India shipping</span>
+            <span className="hero__available-soon">(Available Soon)</span>
           </div>
         </div>
 

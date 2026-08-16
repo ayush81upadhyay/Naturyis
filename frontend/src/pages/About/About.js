@@ -13,7 +13,7 @@ const About = () => {
         <div className="container about-page__hero-inner">
           <SectionHeader
             eyebrow="Our Story"
-            title="Born from a Belief in Pure Food"
+            title="From Sugarcane to You — Pure & Untouched"
             subtitle="Naturyis started with a simple question: why can't everyday sweeteners be completely natural?"
           />
         </div>
