@@ -3,13 +3,11 @@ import Button from '../Button';
 import './ProductCard.css';
 
 const ProductCard = ({ product }) => {
-  const { name, subtitle, description, weight, price, originalPrice, image, badge, tags } = product;
-  const discount = Math.round(((originalPrice - price) / originalPrice) * 100);
+  const { name, subtitle, description, weight, image, badge, tags } = product;
 
   return (
     <article className="product-card">
       {badge && <span className="product-card__badge">{badge}</span>}
-      {discount > 0 && <span className="product-card__discount">-{discount}%</span>}
 
       <div className="product-card__image-wrap">
         <img src={image} alt={`${name} - ${weight}`} className="product-card__image" />
@@ -28,14 +26,11 @@ const ProductCard = ({ product }) => {
         </div>
 
         <div className="product-card__pricing">
-          <span className="product-card__price">₹{price}</span>
-          {originalPrice && (
-            <span className="product-card__original">₹{originalPrice}</span>
-          )}
+          <span className="product-card__price">₹—</span>
         </div>
 
-        <Button variant="primary" size="md" fullWidth>
-          Add to Cart
+        <Button variant="secondary" size="md" fullWidth disabled>
+          Available Soon
         </Button>
       </div>
     </article>

@@ -43,7 +43,7 @@ const Returns = () => {
             <span className="policy-card__icon">🔄</span>
             <h2>How to Raise a Return Request</h2>
             <ol className="policy-list policy-list--ordered">
-              <li>Email us at <a href="mailto:naturyis@gmail.com">naturyis@gmail.com</a> or WhatsApp +91 7875112551</li>
+              <li>Email us at <a href="mailto:naturyis@gmail.com">naturyis@gmail.com</a> or WhatsApp +91 9359635951</li>
               <li>Mention your <strong>Order ID</strong> and reason for return.</li>
               <li>Attach clear photographs of the product and the packaging.</li>
               <li>Our team will review and respond within <strong>1–2 business days</strong>.</li>

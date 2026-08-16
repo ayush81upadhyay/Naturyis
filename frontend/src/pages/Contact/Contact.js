@@ -186,6 +186,20 @@ const Contact = () => {
           </div>
         </div>
       </section>
+
+      <section className="section-alt contact-page__feedback-section">
+        <div className="container">
+          <div className="contact-page__feedback">
+            <div>
+              <h4>Share Your Feedback</h4>
+              <p style={{fontSize:'var(--font-size-sm)',color:'var(--color-text-medium)',margin:0}}>Help us improve — takes 1 minute.</p>
+            </div>
+            <a href="https://tally.so/r/Y5kbzd" target="_blank" rel="noopener noreferrer" className="contact-page__feedback-link">
+              Fill Feedback Form →
+            </a>
+          </div>
+        </div>
+      </section>
     </main>
   );
 };

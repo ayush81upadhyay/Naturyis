@@ -17,7 +17,7 @@ const Footer = () => {
               <img src={logo} alt="Naturyis Logo" />
               <span>Naturyis</span>
             </Link>
-            <p className="footer__tagline">Pure. Natural. Jaggery.</p>
+            <p className="footer__tagline">Sweet. Clean. Real.</p>
             <p className="footer__desc">
               Premium chemical-free jaggery products crafted with care for India's families.
               No preservatives. No artificial colours. Just pure goodness.

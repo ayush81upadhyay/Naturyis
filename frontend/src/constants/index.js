@@ -8,7 +8,7 @@ export const API_BASE_URL = process.env.REACT_APP_API_BASE_URL || 'http://localh
 export const CONTACT_EMAIL = process.env.REACT_APP_CONTACT_EMAIL || 'naturyis@gmail.com';
 export const CONTACT_PHONE = process.env.REACT_APP_CONTACT_PHONE || '+91 7875112551';
 export const CONTACT_PHONE_2 = process.env.REACT_APP_CONTACT_PHONE_2 || '+91 9359635951';
-export const WHATSAPP_NUMBER = process.env.REACT_APP_WHATSAPP_NUMBER || '917875112551';
+export const WHATSAPP_NUMBER = process.env.REACT_APP_WHATSAPP_NUMBER || '919359635951';
 export const INSTAGRAM_URL = process.env.REACT_APP_INSTAGRAM_URL || 'https://www.instagram.com/naturyis';
 export const FACEBOOK_URL = process.env.REACT_APP_FACEBOOK_URL || 'https://www.facebook.com/profile.php?id=61589624755036';
 export const ADDRESS = 'Nigave Dumala, Taluka Karveer, District Kolhapur, Maharashtra - 416229, India';
@@ -39,7 +39,7 @@ export const PRODUCTS = [
   {
     id: 2,
     name: 'Naturyis Jaggery Powder',
-    subtitle: 'Family Pack',
+    subtitle: 'Premium Chemical-Free',
     description: 'Our popular jaggery powder in a larger pack — perfect for daily use in chai, desserts, and cooking.',
     weight: '1kg',
     price: 349,
@@ -50,15 +50,15 @@ export const PRODUCTS = [
   },
   {
     id: 3,
-    name: 'Naturyis Jaggery Block',
-    subtitle: 'Traditional Style',
-    description: 'Traditional block jaggery the way your grandparents loved it. Slow-cooked in iron pans, rich in minerals.',
-    weight: '500g',
-    price: 179,
-    originalPrice: 220,
-    image: SugBag,
+    name: 'Naturyis Jaggery Powder',
+    subtitle: 'Premium Chemical-Free',
+    description: 'Pure, unrefined jaggery powder made from hand-picked sugarcane. No chemicals, no preservatives — just goodness.',
+    weight: '250g',
+    price: 149,
+    originalPrice: 180,
+    image: JGPouch,
     badge: 'Traditional',
-    tags: ['Iron-Rich', 'Traditional Recipe', 'No Chemicals'],
+    tags: ['Chemical-Free', 'Fasting Safe', 'No Preservatives'],
   },
 ];
 
